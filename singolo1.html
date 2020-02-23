@@ -4,24 +4,127 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Singolo</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="singolo1.css">
 </head>
 <body>
+  <!--Header starts here-->
   <header class="header">
     <div class="wrapper">
-      <h1 class="logo">SINGOLO<span>*</span></h1>
+      <div class="logo">
+        <h1>SINGOLO</h1>
+        <p>*</p>
+      </div>
       <nav class="header__navigation">
         <ul class="navigation">
-          <li>HOME</li>
-          <li>SERVICES</li>
-          <li>PORTFOLIO</li>
-          <li>ABOUT</li>
-          <li>CONTACT</li>
+          <li class="navigation-item"><a class="item-active" href="#">HOME</a></li>
+          <li class="navigation-item"><a href="#">SERVICES</a></li>
+          <li class="navigation-item"><a href="#">PORTFOLIO</a></li>
+          <li class="navigation-item"><a href="#">ABOUT</a></li>
+          <li class="navigation-item"><a href="#">CONTACT</a></li>
         </ul>
       </nav>
     </div>
   </header>
-  <section></section>
-  <main></main>
+  <!--Slider starts here-->
+  <section class="slider">
+    <div class="wrapper">
+      <a class="slider__button button_previous" href="#">
+        <object type="image/svg+xml" data="assets/arrow.svg">
+          <img src="assets/arrow.svg" alt="arrow-prev">
+        </object>
+      </a>
+      <div class="slider__content">
+        <div class="vertical-phone">
+          <img class="phone-image" src="assets/iPhone.svg" alt="iPhone">
+          <img class="shadow-image" src="assets/Shadow.png" alt="shadow">
+          <img class="picture-image" src="assets/image_1.png" alt="picture">
+        </div>
+        <div class="horizontal-phone">
+          <img class="phone-image" src="assets/iPhone.svg" alt="iPhone">
+          <img class="shadow-image" src="assets/Shadow.png" alt="shadow">
+          <img class="picture-image" src="assets/image_2.png" alt="picture">
+        </div>
+      </div>
+      <a class="slider__button button_next" href="#">
+        <object type="image/svg+xml" data="assets/arrow.svg">
+          <img src="assets/arrow.svg" alt="arrow-prev">
+        </object>
+      </a>
+    </div>
+  </section>
+  <!--Services starts here-->
+  <main class="services">
+    <div class="wrapper">
+      <div class="services__top">
+        <h2>Our Services</h2>
+        <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non 
+          commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce 
+          dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+      </div>
+      <div class="services__items">
+        <div class="services__item">
+          <div class="item_icon">
+            <img src="assets/pen.svg" alt="pen">
+          </div>
+          <div class="item_text">
+            <h3>Custom Design</h3>
+            <p>Curabitur vestibulum eget mauris quis laoreet. 
+              Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
+          </div>
+        </div>
+        <div class="services__item">
+          <div class="item_icon">
+            <img src="assets/bulb.svg" alt="pen">
+          </div>
+          <div class="item_text">
+            <h3>Inovative Ideas</h3>
+            <p>Quisque luctus, quam eget molestie commodo, 
+              lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
+          </div>
+        </div>
+        <div class="services__item">
+          <div class="item_icon">
+            <img src="assets/heart.svg" alt="pen">
+          </div>
+          <div class="item_text">
+            <h3>Love Is The Answer</h3>
+            <p>Nulla sed nunc et tortor luctus faucibus. 
+              Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
+          </div>
+        </div>
+        <div class="services__item">
+          <div class="item_icon">
+            <img src="assets/phone.svg" alt="pen">
+          </div>
+          <div class="item_text">
+            <h3>Responsive Layout</h3>
+            <p>Sed porttitor placerat rhoncus. In at nunc tellus. 
+              Maecenas blandit nunc ligula. Praesent elit leo.</p>
+          </div>
+        </div>
+        <div class="services__item">
+          <div class="item_icon">
+            <img src="assets/bubble.svg" alt="pen">
+          </div>
+          <div class="item_text">
+            <h3>24 / 7 Support</h3>
+            <p>Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. 
+              Nulla a sem erat. Pellentesque egestas venenatis lorem .</p>
+          </div>
+        </div>
+        <div class="services__item">
+          <div class="item_icon">
+            <img src="assets/star.svg" alt="pen">
+          </div>
+          <div class="item_text">
+            <h3>Feel Like A Star</h3>
+            <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. 
+              Fusce vitae aliquam tellus.</p>
+          </div>
+        </div>
+      </div>  
+    </div>
+  </main>
 </body>
 </html>
