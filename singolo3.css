@@ -1,0 +1,80 @@
+@font-face {
+  font-family: 'Lato';
+  src: url(assets/Lato-Black.ttf);
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url(assets/Lato-Light.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url(assets/Lato-Regular.ttf);
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box; 
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+  width: 1020px;
+  margin: 0 auto;
+}
+
+.get-a-quote {
+  background-color: #f06c64;
+  border-bottom: 6px solid #ea676b;
+}
+
+.get-a-quote .wrapper {
+  padding: 59px 40px 67px;
+}
+
+.get-a-quote__top h2 {
+  font-size: 30px;
+  color: #f0d8d9;
+  letter-spacing: -0.2px;
+  font-weight: 900;
+}
+
+.get-a-quote__top p {
+  margin-top: 18px;
+  font-size: 18px;
+  color: #f0d8d9;
+  letter-spacing: -0.05px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+.get-a-quote__layout {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*Footer start here*/
+
+.footer {
+  background-color: #2d303a;
+}
+
+.footer .wrapper {
+  display: flex;
+  height: 76px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+
+.divious {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: aqua;
+}
