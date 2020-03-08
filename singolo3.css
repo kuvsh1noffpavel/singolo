@@ -56,6 +56,171 @@
 .get-a-quote__layout {
   display: flex;
   justify-content: space-between;
+  margin-top: 41px;
+}
+
+.get-a-quote__form {
+  margin-top: 3px;
+  flex: 1 0 auto;
+}
+
+.form-layout {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-layout *{
+  margin-bottom: 16px;
+}
+
+.form-layout :last-child {
+  margin-bottom: 0px;
+}
+
+.form_item {
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.form_item::placeholder {
+  font-size: 12px;
+  color: #f48c8f;
+  vertical-align: top;
+}
+
+.form_item:-ms-input-placeholder {
+  font-size: 12px;
+  color: #f48c8f;
+  vertical-align: top;
+}
+
+.form_item::-ms-input-placeholder{
+  font-size: 12px;
+  color: #f48c8f;
+  vertical-align: top;
+}
+
+.form_item::-webkit-input-placeholder {
+  font-size: 12px;
+  color: #f48c8f;
+  vertical-align: top;
+}
+
+.input-item {
+  height: 38px;
+  color: #f48c8f;
+  background-color: #d6564f;
+  border: 1px solid #d6564f;
+  padding-left: 14px;
+  padding-bottom: 1px;
+  transition-duration: .2s;
+}
+
+.input-item:hover, .quote-message:hover{
+  border: 1px solid #ca4549;
+  opacity: 0.6;
+  transition-duration: .2s;
+}
+
+.input-item:invalid:not(:focus):not(:placeholder-shown){
+  border: 1px solid #ff0000;
+  opacity: 0.6;
+  transition-duration: .2s;
+}
+
+.input-item:focus, .quote-message:focus{
+  border: 1px solid #ca4549;
+  opacity: 0.75;
+}
+
+.quote-message {
+  height: 202px;
+  width: 100%;
+  resize: none;
+  font-size: 12px;
+  color: #f48c8f;
+  background-color: #d6564f;
+  border: 1px solid #d6564f;
+  padding: 9px 13px;
+  transition-duration: .2s;
+}
+
+.form_submit-button {
+  background-color: #ca4549;
+  color: #f48c8f;
+  height: 38px;
+  width: 70px;
+  cursor: pointer;
+  transition-duration: .2s;
+}
+
+.form_submit-button:hover {
+  opacity: 0.6;
+  transition-duration: .2s;
+}
+
+
+.get-a-quote__content {
+  flex: 0 0 300px;
+  margin-left: 21px;
+}
+
+.content__items-heading {
+  font-size: 19px;
+  color: #f0d8d9;
+  margin-top: 0px;
+  letter-spacing: -0.54px;
+}
+
+.content__items-text {
+  margin-top: 9px;
+  line-height: 21.5px;
+}
+
+.items-text {
+  font-size: 12px;
+  font-weight: 400;
+  color: #f0d8d9;
+  letter-spacing: -0.15px;
+}
+
+.content__links {
+  margin-top: 25px;
+}
+
+.links__item {
+  list-style: none;
+  margin-bottom: 7px;
+}
+
+.links__item:last-child {
+  margin-bottom: 0px;
+}
+
+.links__item_location::before{
+  content: url(assets/icon-location.png);
+  display: inline-block;
+  margin-right: 12px;
+  margin-left: 3px;
+}
+
+.links__item_phone::before{
+  content: url(assets/icon-phone.png);
+  display: inline-block;
+  margin-left: 1px;
+  margin-right: 11px;
+}
+
+.links__item_mail::before{
+  content: url(assets/icon-mail.png);
+  display: inline-block;
+  margin-right: 10px;
+}
+
+
+.links__url {
+  text-decoration: none;
 }
 
 /*Footer start here*/
@@ -72,9 +237,84 @@
   padding: 0 40px;
 }
 
-.divious {
+.footer_since-information {
+  margin-left: 1px;
+  font-size: 12px;
+  color: #666d89;
+  letter-spacing: -0.15px;
+}
+
+.social-tags {
+  display: flex;
+  justify-content: left;
+}
+
+.social-tags :last-child {
+  margin-right: 0px;
+}
+
+.social-tag {
+  list-style: none;
+  margin-right: 8px;
+}
+
+.social-tag a {
   display: block;
-  width: 40px;
-  height: 40px;
-  background-color: aqua;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  transition-duration: .2s;
+}
+
+.social-tag a:hover {
+  opacity: 0.6;
+  transition-duration: .2s;
+}
+
+.icon-facebook {
+  display: block;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #6a718c;
+  border-radius: 50%;
+  background-image: url(assets/icon-facebook.svg);
+  background-size: 25px 18px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.icon-plus-google {
+  display: block;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #6a718c;
+  border-radius: 50%;
+  background-image: url(assets/icon-google-plus.svg);
+  background-size: 17px 17px;
+  background-repeat: no-repeat;
+  background-position: center 6px;
+}
+
+.icon-twitter {
+  display: block;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #6a718c;
+  border-radius: 50%;
+  background-image: url(assets/icon-twitter.svg);
+  background-size: 17px 17px;
+  background-repeat: no-repeat;
+  background-position: center 6px;
+}
+
+.icon-linkedin {
+  display: block;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #6a718c;
+  border-radius: 50%;
+  background-image: url(assets/icon-linkedin.svg);
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
