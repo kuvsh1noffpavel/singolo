@@ -435,7 +435,6 @@
   letter-spacing: -0.15px;
 }
 
-
 /*fix some margin and padding for pixel perfect*/
 .about-us__item:nth-child(3) .item_social-tags {
   margin-left: 0px;
