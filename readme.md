@@ -1,0 +1,1 @@
+https://kuvsh1noffpavel.github.io/singolo/
